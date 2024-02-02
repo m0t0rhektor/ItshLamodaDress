@@ -1,0 +1,27 @@
+{
+    "name": "itsh-lamoda-dress/itsh-lamoda-dress",
+    "description": "Skeleton plugin",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "ItshLamodaDress\\ItshLamodaDress",
+        "label": {
+            "de-DE": "Skeleton plugin",
+            "en-GB": "Skeleton plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ItshLamodaDress\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ItshLamodaDress\\Tests\\": "tests/"
+        }
+    }
+}

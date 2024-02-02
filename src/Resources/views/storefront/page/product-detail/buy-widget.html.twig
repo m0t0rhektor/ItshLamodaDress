@@ -1,0 +1,104 @@
+{% sw_extends '@zenitPlatformSphere/storefront/page/product-detail/buy-widget.html.twig' %}
+
+{% block page_product_detail_buy_form %}
+	{{ parent() }}
+
+	{% block product_detail_marketing_infos %}
+		<style>
+			.product_detail_container {
+				font-family: "Avenir Next", sans-serif;
+			}
+			.product_detail_info {
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
+			}
+
+			.product_detail_info span {
+				width: 23px;
+				height: 28px;
+				display: flex;
+				flex-shrink: 0;
+				margin-right: 10px;
+			}
+
+			.product_detail_info svg {
+				width: 100%;
+				height: 100%;
+				fill: none;
+				stroke: currentColor;
+				stroke-width: 1.2;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
+
+			.product_detail_info p {
+				margin: 0;
+			}
+		</style>
+		<div class="product_detail_container">
+			<div class="product_detail_info">
+				<span>
+					<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.926 18.874c4.609-4.015 8.176-7.694 8.176-10.661 0-2.151-1.577-3.713-3.75-3.713-1.898 0-3.477 1.393-4.426 2.989C10.977 5.893 9.398 4.5 7.5 4.5c-2.173 0-3.75 1.561-3.75 3.713 0 2.967 3.567 6.646 8.176 10.661z"></path>
+					</svg>
+				</span>
+				<div>
+					<p>Mit Liebe verpackt</p>
+				</div>
+			</div>
+
+			<div class="product_detail_info">
+
+				<span>
+					<svg viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20.734 6.566 12 9.512 3.265 6.566M12 20.376V9.512" stroke="currentColor" stroke-width=".966" stroke-miterlimit="10"></path>
+						<path d="m7.854 5.021 8.734 2.946" stroke="currentColor" stroke-width=".872" stroke-miterlimit="10"></path>
+						<path d="m12 20.376 8.734-3.678V6.566L12 3.624 3.265 6.566V16.698L12 20.376z" stroke="currentColor" stroke-width=".966" stroke-miterlimit="10"></path>
+						<path d="m5.602 9.546 3.67 1.27v2.454l-3.67-1.378V9.546z" stroke="currentColor" stroke-width=".872" stroke-miterlimit="10"></path>
+					</svg>
+				</span>
+
+
+				<div class="product__callouts-item-text rte">
+					<p>Internationaler weltweiter Versand</p>
+				</div>
+			</div>
+
+
+			<div class="product_detail_info">
+
+				<span>
+					<svg viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20.353 16.126h-5.642V14.83l-2.968 2.899 2.968 2.899v-1.295h3.79l2.718-4.696-2.35-4.068-2.779 1.604 2.209 3.824M4.634 17.845l2.821-4.887 1.121.648L7.55 9.585l-3.995 1.122 1.122.647-1.896 3.282 2.709 4.702 4.698-.001v-3.208l-4.416.001M11.006 3.376l2.821 4.887-1.121.647 3.995 1.121 1.026-4.02-1.121.648-1.895-3.283-5.426-.005-2.348 4.07 2.778 1.603 2.207-3.824" stroke="currentColor" stroke-width=".872" stroke-miterlimit="10"></path>
+					</svg>
+				</span>
+
+
+				<div>
+					<p>Rückgaben erfolgen in Form von Gutscheinen oder Umtausch (Sale Artikeln sind ausgeschlossen)</p>
+				</div>
+			</div>
+
+
+			<div class="product_detail_info">
+
+				<span>
+					<svg viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M17.343 16.812H3.219v-4.415h14.124" stroke="currentColor" stroke-width=".987" stroke-miterlimit="10"></path>
+						<path d="M11.903 16.705v-2.369M6.438 16.705v-2.369M9.17 16.705v-1.51M14.635 16.705v-1.51M17.368 16.705v-2.369" stroke="currentColor" stroke-width=".934" stroke-miterlimit="10"></path>
+						<path d="M17.343 16.812a2.882 2.882 0 0 0 2.882-2.882V9.515" stroke="currentColor" stroke-width=".987" stroke-miterlimit="10"></path>
+						<path d="M8.816 12.397a2.882 2.882 0 1 1 0-5.764h8.527a2.882 2.882 0 1 1 0 5.764" stroke="currentColor" stroke-width=".987" stroke-miterlimit="10"></path>
+						<path d="M8.81 9.515h8.54" stroke="currentColor" stroke-width=".934" stroke-miterlimit="10"></path>
+					</svg>
+				</span>
+
+
+				<div>
+					<p>bitte Größentabelle beachten</p>
+				</div>
+			</div>
+		</div>
+
+	{% endblock %}
+{% endblock %}
