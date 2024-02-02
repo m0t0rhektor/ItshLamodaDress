@@ -1,14 +1,9 @@
-{% sw_extends '@TiHaLamodaDress/storefront/page/product-detail/configurator.html.twig' %}
+{% sw_extends '@zenitPlatformSphere/storefront/page/product-detail/buy-widget.html.twig' %}
 
-{% block page_product_detail_configurator_option_radio_label %}
-
-	{{ parent() }}
+{% block page_product_detail_buy_form %}
 
 	{% block product_detail_marketing_infos %}
 		<style>
-			.product_detail_container {
-				font-family: "Avenir Next", sans-serif;
-			}
 			.product_detail_info {
 				display: flex;
 				align-items: center;
@@ -37,7 +32,7 @@
 				margin: 0;
 			}
 		</style>
-		<div class="product_detail_container">
+		<div>
 			<div class="product_detail_info">
 				<span>
 					<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -102,4 +97,5 @@
 		</div>
 
 	{% endblock %}
+	{{ parent() }}
 {% endblock %}
