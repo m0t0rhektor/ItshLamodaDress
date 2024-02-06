@@ -15,6 +15,12 @@
 #productDetailPageBuyProductForm > div.row.g-2.mt-0.justify-content-end {
     display: block;
 }
-.offcanvas {
-  padding: 10;
+.offcanvas-header {
+  padding: 1rem 20px!important;
+}
+.product-detail-payment-logos {
+  justify-content: center;
+}
+.footer-logos {
+  justify-content: left;
 }
