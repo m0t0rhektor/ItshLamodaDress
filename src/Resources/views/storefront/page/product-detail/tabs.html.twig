@@ -1,0 +1,89 @@
+{% sw_extends '@zenitPlatformSphere/storefront/page/product-detail/tabs.html.twig' %}
+
+{% block zen_page_product_detail_tabs_content_custom_tab2 %}
+	<div class="accordion-item">
+		<div class="accordion-header product-detail-custom-field2-tab-title">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#custom-field2-tab-pane" aria-controls="#custom-field2-tab-pane" aria-expanded="false">Größentabelle</button>
+		</div>
+		<div class="tab-pane fade accordion-collapse collapse" id="custom-field2-tab-pane" role="tabpanel" aria-labelledby="custom-field2-tab" data-bs-parent="#product-detail-accordion">
+			<div class="offcanvas-header p-0">
+				<button class="btn offcanvas-close js-offcanvas-close">
+					<span class="icon icon-x icon-md">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="32" height="32" viewbox="0 0 32 32">
+							<use xlink:href="#icons-simple-x" fill-rule="evenodd"></use>
+						</svg>
+					</span>
+					<span class="offcanvas-title"></span>
+				</button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="product-detail-custom-field2 tab-pane-container">
+					<table>
+						<tbody>
+							<tr>
+								<th>Größe</th>
+								<th>Brust</th>
+								<th>Taille</th>
+								<th>Hüfte</th>
+							</tr>
+							<tr>
+								<td>36 / S</td>
+								<td>90 cm</td>
+								<td>70 cm
+								</td>
+								<td>98 cm
+								</td>
+							</tr>
+							<tr>
+								<td>38 / M</td>
+								<td>94 cm
+								</td>
+								<td>74 cm
+								</td>
+								<td>102 cm
+								</td>
+							</tr>
+							<tr>
+								<td>40 / L</td>
+								<td>98 cm
+								</td>
+								<td>78 cm
+								</td>
+								<td>106 cm
+								</td>
+							</tr>
+							<tr>
+								<td>42 / XL</td>
+								<td>102 cm
+								</td>
+								<td>82 cm
+								</td>
+								<td>110 cm
+								</td>
+							</tr>
+							<tr>
+								<td>44 / XXL</td>
+								<td>106 cm
+								</td>
+								<td>86 cm
+								</td>
+								<td>114 cm
+								</td>
+							</tr>
+							<tr>
+								<td>46 / 3XL</td>
+								<td>110 cm
+								</td>
+								<td>90 cm
+								</td>
+								<td>118 cm
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
